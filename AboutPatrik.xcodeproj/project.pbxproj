@@ -8,17 +8,19 @@
 
 /* Begin PBXBuildFile section */
 		5F914E98200D13C800D0FA47 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5FF84F01200BAAA10001282E /* Info.plist */; };
+		5F914E9D200D1CC600D0FA47 /* ContrailOne-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5F914E9C200D1CC600D0FA47 /* ContrailOne-Regular.ttf */; };
+		5F914E9F200D1CF900D0FA47 /* OpenSans-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5F914E9E200D1CF900D0FA47 /* OpenSans-Regular.ttf */; };
 		5FF84EF5200BAAA00001282E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FF84EF4200BAAA00001282E /* AppDelegate.m */; };
 		5FF84EF8200BAAA00001282E /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FF84EF7200BAAA00001282E /* ViewController.m */; };
 		5FF84EFB200BAAA10001282E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5FF84EF9200BAAA10001282E /* Main.storyboard */; };
 		5FF84EFD200BAAA10001282E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5FF84EFC200BAAA10001282E /* Assets.xcassets */; };
 		5FF84F00200BAAA10001282E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5FF84EFE200BAAA10001282E /* LaunchScreen.storyboard */; };
 		5FF84F03200BAAA10001282E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FF84F02200BAAA10001282E /* main.m */; };
-		5FF84F0C200BF5420001282E /* OpenSans-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5FF84F0B200BF4240001282E /* OpenSans-Regular.ttf */; };
-		5FF84F0D200BF5420001282E /* ContrailOne-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5FF84F0A200BF40E0001282E /* ContrailOne-Regular.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5F914E9C200D1CC600D0FA47 /* ContrailOne-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ContrailOne-Regular.ttf"; sourceTree = "<group>"; };
+		5F914E9E200D1CF900D0FA47 /* OpenSans-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-Regular.ttf"; sourceTree = "<group>"; };
 		5FF84EF0200BAAA00001282E /* AboutPatrik.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AboutPatrik.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5FF84EF3200BAAA00001282E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		5FF84EF4200BAAA00001282E /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -29,8 +31,6 @@
 		5FF84EFF200BAAA10001282E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5FF84F01200BAAA10001282E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5FF84F02200BAAA10001282E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		5FF84F0A200BF40E0001282E /* ContrailOne-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "ContrailOne-Regular.ttf"; path = "../../../../../Desktop/Contrail_One/ContrailOne-Regular.ttf"; sourceTree = "<group>"; };
-		5FF84F0B200BF4240001282E /* OpenSans-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "OpenSans-Regular.ttf"; path = "../../../../../Desktop/Open_Sans/OpenSans-Regular.ttf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,8 +80,8 @@
 		5FF84F09200BF3180001282E /* Fonts */ = {
 			isa = PBXGroup;
 			children = (
-				5FF84F0B200BF4240001282E /* OpenSans-Regular.ttf */,
-				5FF84F0A200BF40E0001282E /* ContrailOne-Regular.ttf */,
+				5F914E9C200D1CC600D0FA47 /* ContrailOne-Regular.ttf */,
+				5F914E9E200D1CF900D0FA47 /* OpenSans-Regular.ttf */,
 			);
 			path = Fonts;
 			sourceTree = "<group>";
@@ -144,11 +144,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5FF84F0C200BF5420001282E /* OpenSans-Regular.ttf in Resources */,
-				5FF84F0D200BF5420001282E /* ContrailOne-Regular.ttf in Resources */,
 				5F914E98200D13C800D0FA47 /* Info.plist in Resources */,
+				5F914E9D200D1CC600D0FA47 /* ContrailOne-Regular.ttf in Resources */,
 				5FF84F00200BAAA10001282E /* LaunchScreen.storyboard in Resources */,
 				5FF84EFD200BAAA10001282E /* Assets.xcassets in Resources */,
+				5F914E9F200D1CF900D0FA47 /* OpenSans-Regular.ttf in Resources */,
 				5FF84EFB200BAAA10001282E /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
