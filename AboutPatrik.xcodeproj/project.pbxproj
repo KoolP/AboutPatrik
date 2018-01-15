@@ -13,6 +13,8 @@
 		5FF84EFD200BAAA10001282E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5FF84EFC200BAAA10001282E /* Assets.xcassets */; };
 		5FF84F00200BAAA10001282E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5FF84EFE200BAAA10001282E /* LaunchScreen.storyboard */; };
 		5FF84F03200BAAA10001282E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FF84F02200BAAA10001282E /* main.m */; };
+		5FF84F0C200BF5420001282E /* OpenSans-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5FF84F0B200BF4240001282E /* OpenSans-Regular.ttf */; };
+		5FF84F0D200BF5420001282E /* ContrailOne-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5FF84F0A200BF40E0001282E /* ContrailOne-Regular.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,8 @@
 		5FF84EFF200BAAA10001282E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5FF84F01200BAAA10001282E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5FF84F02200BAAA10001282E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		5FF84F0A200BF40E0001282E /* ContrailOne-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "ContrailOne-Regular.ttf"; path = "../../../../../Desktop/Contrail_One/ContrailOne-Regular.ttf"; sourceTree = "<group>"; };
+		5FF84F0B200BF4240001282E /* OpenSans-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "OpenSans-Regular.ttf"; path = "../../../../../Desktop/Open_Sans/OpenSans-Regular.ttf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +62,7 @@
 		5FF84EF2200BAAA00001282E /* AboutPatrik */ = {
 			isa = PBXGroup;
 			children = (
+				5FF84F09200BF3180001282E /* Fonts */,
 				5FF84EF3200BAAA00001282E /* AppDelegate.h */,
 				5FF84EF4200BAAA00001282E /* AppDelegate.m */,
 				5FF84EF6200BAAA00001282E /* ViewController.h */,
@@ -69,6 +74,15 @@
 				5FF84F02200BAAA10001282E /* main.m */,
 			);
 			path = AboutPatrik;
+			sourceTree = "<group>";
+		};
+		5FF84F09200BF3180001282E /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				5FF84F0B200BF4240001282E /* OpenSans-Regular.ttf */,
+				5FF84F0A200BF40E0001282E /* ContrailOne-Regular.ttf */,
+			);
+			path = Fonts;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -129,6 +143,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5FF84F0C200BF5420001282E /* OpenSans-Regular.ttf in Resources */,
+				5FF84F0D200BF5420001282E /* ContrailOne-Regular.ttf in Resources */,
 				5FF84F00200BAAA10001282E /* LaunchScreen.storyboard in Resources */,
 				5FF84EFD200BAAA10001282E /* Assets.xcassets in Resources */,
 				5FF84EFB200BAAA10001282E /* Main.storyboard in Resources */,
