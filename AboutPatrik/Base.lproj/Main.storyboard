@@ -18,7 +18,7 @@
         </array>
     </customFonts>
     <scenes>
-        <!--View Controller-->
+        <!--About Me App-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
@@ -41,7 +41,7 @@
                                 <rect key="frame" x="245" y="135" width="130" height="34"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="ContrailOne-Regular" family="Contrail One" pointSize="17"/>
-                                <state key="normal" title="&gt; My mini games">
+                                <state key="normal" title="&gt; Mini game">
                                     <color key="titleColor" red="0.12941176469999999" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                             </button>
@@ -50,7 +50,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="jVp-R0-cSl">
-                                <rect key="frame" x="0.0" y="257" width="375" height="128"/>
+                                <rect key="frame" x="0.0" y="257" width="375" height="150"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
                                     <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="PATRIK RIKAMA-HINNENBERG" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="uZt-36-aHZ">
@@ -91,10 +91,10 @@
                                 <color key="backgroundColor" red="0.54120698749999996" green="0.91966076809999997" blue="0.95157997859999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </view>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pc4-Ra-UNF">
-                                <rect key="frame" x="25" y="323" width="334" height="268"/>
+                                <rect key="frame" x="25" y="323" width="334" height="286"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <string key="text">My dream is to become a mobile and web developer with solid skills so I can be part of creating great applications and services. I would like to work in a company where the default office clothing style does not include shoes. I would not mind beeing part of some collaborative communities who build tech together in cross functional teams that build everything from hypermedia designs to cutting edge tech. Lets make apps, games, sites that become business cases, charity projects or just for fun creations in an open source and free software development atmosphere.</string>
+                                <mutableString key="text">My goal is to become a mobile and web developer with solid skills, so I can be part of creating great applications and services. I would like to work in a company/team where the default office clothing style does not include shoes. Building apps together in cross functional teams where the aim is to build good designs and cutting edge tech solutions would be a priviledge to be part of. Now I am studying mobile applications and web technologies. With former profession as a soccer player, sales &amp; marketing rep within IT and some hobbies like popping and breaking I am equipped with couple other attributes beyond coding.</mutableString>
                                 <fontDescription key="fontDescription" name="OpenSans-Regular" family="Open Sans" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
@@ -110,16 +110,18 @@
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
-                    <navigationItem key="navigationItem" id="AkI-Gx-lQQ"/>
+                    <navigationItem key="navigationItem" title="About Me App" id="AkI-Gx-lQQ">
+                        <barButtonItem key="backBarButtonItem" title=" " id="RYx-lz-KpV"/>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="372" y="33.733133433283363"/>
         </scene>
-        <!--View Controller-->
+        <!--Coding buddies-->
         <scene sceneID="qln-UX-Tcw">
             <objects>
-                <viewController id="bIh-aF-s0V" sceneMemberID="viewController">
+                <viewController title="Coding buddies" id="bIh-aF-s0V" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Z7R-ae-LFb">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

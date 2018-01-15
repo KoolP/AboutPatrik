@@ -17,6 +17,12 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+    
+    // Change UI navBar font
+    [self.navigationController.navigationBar setTitleTextAttributes:
+     @{NSForegroundColorAttributeName:[UIColor blackColor],
+       NSFontAttributeName:[UIFont fontWithName:@"ContrailOne-Regular" size:21]}];
+    
 }
 
 
