@@ -29,10 +29,12 @@
     if (_switchBlk.on){
         self.view.backgroundColor  = [UIColor blackColor];
         _textViewAbout.backgroundColor = [UIColor colorWithRed:138.0/255.0 green:235.0/255.0 blue:243.0/255.0 alpha:1.0];
+        _bearMe.hidden = NO;
         
     } else{
         self.view.backgroundColor = [UIColor whiteColor];
         _textViewAbout.backgroundColor = [UIColor whiteColor];
+        _bearMe.hidden = YES;
     }
 }
 
