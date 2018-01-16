@@ -25,6 +25,16 @@
     
 }
 
+- (IBAction)swichPushed:(id)sender {
+    if (_switchBlk.on){
+        self.view.backgroundColor  = [UIColor blackColor];
+        _textViewAbout.backgroundColor = [UIColor colorWithRed:138.0/255.0 green:235.0/255.0 blue:243.0/255.0 alpha:1.0];
+        
+    } else{
+        self.view.backgroundColor = [UIColor whiteColor];
+        _textViewAbout.backgroundColor = [UIColor whiteColor];
+    }
+}
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];

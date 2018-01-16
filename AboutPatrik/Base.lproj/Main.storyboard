@@ -60,8 +60,16 @@
                                         <fontDescription key="fontDescription" name="ContrailOne-Regular" family="Contrail One" pointSize="17"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
+                                    <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="1qC-Jy-pGV">
+                                        <rect key="frame" x="306" y="18" width="49" height="31"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="onTintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <connections>
+                                            <action selector="swichPushed:" destination="BYZ-38-t0r" eventType="valueChanged" id="qO7-Q9-Acu"/>
+                                        </connections>
+                                    </switch>
                                 </subviews>
-                                <color key="backgroundColor" red="0.54120698751552276" green="0.91966076808507791" blue="0.95157997856312748" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" red="0.54117647058823526" green="0.91966076808507791" blue="0.95157997856312748" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </view>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="2Ad-OQ-odW">
                                 <rect key="frame" x="0.0" y="610" width="375" height="57"/>
@@ -91,7 +99,7 @@
                                 <color key="backgroundColor" red="0.54120698749999996" green="0.91966076809999997" blue="0.95157997859999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </view>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pc4-Ra-UNF">
-                                <rect key="frame" x="25" y="323" width="334" height="286"/>
+                                <rect key="frame" x="25" y="323" width="334" height="287"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <string key="text">My goal is to become a mobile and web developer with solid skills, so I can be part of creating great applications and services. I would like to work in a company/team where the default office clothing style does not include shoes. Building apps together in cross functional teams where the aim is to build good designs and cutting edge tech solutions would be a priviledge to be part of. Now I am studying mobile applications and web technologies. With former profession as a soccer player, sales &amp; marketing rep within IT and some hobbies like popping and breaking I am equipped with couple other attributes beyond coding.</string>
@@ -113,6 +121,10 @@
                     <navigationItem key="navigationItem" title="About Me" id="AkI-Gx-lQQ">
                         <barButtonItem key="backBarButtonItem" title=" " id="RYx-lz-KpV"/>
                     </navigationItem>
+                    <connections>
+                        <outlet property="switchBlk" destination="1qC-Jy-pGV" id="6Gf-rv-471"/>
+                        <outlet property="textViewAbout" destination="Pc4-Ra-UNF" id="6Is-Cq-em8"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
