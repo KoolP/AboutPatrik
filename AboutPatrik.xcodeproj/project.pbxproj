@@ -19,6 +19,7 @@
 		5FF84F00200BAAA10001282E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5FF84EFE200BAAA10001282E /* LaunchScreen.storyboard */; };
 		5FF84F03200BAAA10001282E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FF84F02200BAAA10001282E /* main.m */; };
 		9424EB7F200F610400A55531 /* aboutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9424EB7E200F610400A55531 /* aboutViewController.m */; };
+		9424EBA7200FB1B200A55531 /* gameViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9424EBA6200FB1B200A55531 /* gameViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,6 +40,8 @@
 		5FF84F02200BAAA10001282E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		9424EB7D200F610400A55531 /* aboutViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = aboutViewController.h; sourceTree = "<group>"; };
 		9424EB7E200F610400A55531 /* aboutViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = aboutViewController.m; sourceTree = "<group>"; };
+		9424EBA5200FB1B200A55531 /* gameViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = gameViewController.h; sourceTree = "<group>"; };
+		9424EBA6200FB1B200A55531 /* gameViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = gameViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,6 +96,8 @@
 				5FF84EF6200BAAA00001282E /* ViewController.h */,
 				5FF84EF7200BAAA00001282E /* ViewController.m */,
 				5FF84EF9200BAAA10001282E /* Main.storyboard */,
+				9424EBA5200FB1B200A55531 /* gameViewController.h */,
+				9424EBA6200FB1B200A55531 /* gameViewController.m */,
 				9424EB7D200F610400A55531 /* aboutViewController.h */,
 				9424EB7E200F610400A55531 /* aboutViewController.m */,
 				5FF84F09200BF3180001282E /* Fonts */,
@@ -191,6 +196,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9424EBA7200FB1B200A55531 /* gameViewController.m in Sources */,
 				5FF84EF8200BAAA00001282E /* ViewController.m in Sources */,
 				5FF84F03200BAAA10001282E /* main.m in Sources */,
 				9424EB7F200F610400A55531 /* aboutViewController.m in Sources */,

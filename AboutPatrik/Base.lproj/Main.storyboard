@@ -216,20 +216,50 @@
             </objects>
             <point key="canvasLocation" x="2007" y="-163"/>
         </scene>
-        <!--GAME-->
+        <!--Guess The Number-->
         <scene sceneID="4nu-Av-Nah">
             <objects>
-                <viewController title="GAME" id="3fP-b9-M0a" sceneMemberID="viewController">
+                <viewController title="Guess The Number" id="3fP-b9-M0a" customClass="gameViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Ghg-jz-3YF">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="GK2-r2-4Ra">
+                                <rect key="frame" x="16" y="318" width="343" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" name="OpenSans-Regular" family="Open Sans" pointSize="30"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ebZ-IP-Ybf">
+                                <rect key="frame" x="16" y="143" width="343" height="53"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="OpenSans-Regular" family="Open Sans" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ofq-cn-nTb">
+                                <rect key="frame" x="16" y="356" width="343" height="98"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="GUESS">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="guessButton:" destination="3fP-b9-M0a" eventType="touchUpInside" id="cIA-hv-OMU"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="8yT-7s-I2i"/>
                     </view>
+                    <connections>
+                        <outlet property="guessedNumber" destination="GK2-r2-4Ra" id="Jv0-fc-DT1"/>
+                        <outlet property="infoLabel" destination="ebZ-IP-Ybf" id="Hy7-gY-ucN"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="RY2-LJ-dVN" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1244" y="823"/>
+            <point key="canvasLocation" x="1244" y="821.73913043478262"/>
         </scene>
         <!--PROJECTS-->
         <scene sceneID="48D-Em-0FM">
