@@ -18,6 +18,7 @@
 		5FF84EFD200BAAA10001282E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5FF84EFC200BAAA10001282E /* Assets.xcassets */; };
 		5FF84F00200BAAA10001282E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5FF84EFE200BAAA10001282E /* LaunchScreen.storyboard */; };
 		5FF84F03200BAAA10001282E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FF84F02200BAAA10001282E /* main.m */; };
+		9424EB7F200F610400A55531 /* aboutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9424EB7E200F610400A55531 /* aboutViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +37,8 @@
 		5FF84EFF200BAAA10001282E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5FF84F01200BAAA10001282E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5FF84F02200BAAA10001282E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		9424EB7D200F610400A55531 /* aboutViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = aboutViewController.h; sourceTree = "<group>"; };
+		9424EB7E200F610400A55531 /* aboutViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = aboutViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,12 +88,14 @@
 		5FF84EF2200BAAA00001282E /* AboutPatrik */ = {
 			isa = PBXGroup;
 			children = (
-				5FF84F09200BF3180001282E /* Fonts */,
 				5FF84EF3200BAAA00001282E /* AppDelegate.h */,
 				5FF84EF4200BAAA00001282E /* AppDelegate.m */,
 				5FF84EF6200BAAA00001282E /* ViewController.h */,
 				5FF84EF7200BAAA00001282E /* ViewController.m */,
 				5FF84EF9200BAAA10001282E /* Main.storyboard */,
+				9424EB7D200F610400A55531 /* aboutViewController.h */,
+				9424EB7E200F610400A55531 /* aboutViewController.m */,
+				5FF84F09200BF3180001282E /* Fonts */,
 				5FCE3625200EBD2200941204 /* Sounds */,
 				5FF84EFC200BAAA10001282E /* Assets.xcassets */,
 				5FF84EFE200BAAA10001282E /* LaunchScreen.storyboard */,
@@ -188,6 +193,7 @@
 			files = (
 				5FF84EF8200BAAA00001282E /* ViewController.m in Sources */,
 				5FF84F03200BAAA10001282E /* main.m in Sources */,
+				9424EB7F200F610400A55531 /* aboutViewController.m in Sources */,
 				5FF84EF5200BAAA00001282E /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

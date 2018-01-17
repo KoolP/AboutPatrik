@@ -19,14 +19,16 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
     
-    // Change UI navBar font
     [self.navigationController.navigationBar setTitleTextAttributes:
      @{NSForegroundColorAttributeName:[UIColor blackColor],
        NSFontAttributeName:[UIFont fontWithName:@"ContrailOne-Regular" size:21]}];
+    // Change UI navBar font
     
     _bearMe.hidden=YES;
+    // Hide beard
     
     _textView.textContainerInset = UIEdgeInsetsMake(50, 5, 0, 5);
+    // Format text container
 }
 
 - (IBAction)swichPushed:(id)sender {
@@ -44,6 +46,20 @@
         _bearMe.hidden = YES;
     }
 }
+
+- (IBAction)github:(id)sender {
+    NSURL * githubURL = [NSURL URLWithString:@"https://github.com/KoolP"];
+    
+    [[UIApplication sharedApplication] openURL: githubURL options:@{} completionHandler:nil];
+}
+
+- (IBAction)koolsport:(id)sender {
+    NSURL * koolsportURL = [NSURL URLWithString:@"http://koolsport.se/"];
+    
+    [[UIApplication sharedApplication] openURL: koolsportURL options:@{} completionHandler:nil];
+}
+
+
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];

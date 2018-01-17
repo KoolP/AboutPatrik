@@ -79,7 +79,7 @@
                                 <rect key="frame" x="0.0" y="610" width="375" height="57"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="GitHub-Mark-64px" translatesAutoresizingMaskIntoConstraints="NO" id="WfP-Za-dsn">
+                                    <imageView contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="GitHub-Mark-64px" translatesAutoresizingMaskIntoConstraints="NO" id="WfP-Za-dsn">
                                         <rect key="frame" x="33" y="14" width="28" height="28"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     </imageView>
@@ -90,6 +90,11 @@
                                         <nil key="textColor"/>
                                         <fontDescription key="fontDescription" name="ContrailOne-Regular" family="Contrail One" pointSize="17"/>
                                         <textInputTraits key="textInputTraits"/>
+                                        <connections>
+                                            <action selector="github:" destination="BYZ-38-t0r" eventType="editingDidEnd" id="4W1-u3-FGE"/>
+                                            <action selector="github:" destination="BYZ-38-t0r" eventType="touchDown" id="5d2-uX-G74"/>
+                                            <action selector="github:" destination="BYZ-38-t0r" eventType="touchUpInside" id="QNn-3x-HBP"/>
+                                        </connections>
                                     </textField>
                                     <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" text="www.koolsport.se" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="4j9-b7-mqm">
                                         <rect key="frame" x="222" y="11" width="130" height="30"/>
@@ -98,6 +103,10 @@
                                         <nil key="textColor"/>
                                         <fontDescription key="fontDescription" name="ContrailOne-Regular" family="Contrail One" pointSize="17"/>
                                         <textInputTraits key="textInputTraits"/>
+                                        <connections>
+                                            <action selector="koolsport:" destination="BYZ-38-t0r" eventType="editingDidEnd" id="2Rl-Gb-Ved"/>
+                                            <action selector="koolsport:" destination="BYZ-38-t0r" eventType="touchDown" id="bfK-48-7TS"/>
+                                        </connections>
                                     </textField>
                                 </subviews>
                                 <color key="backgroundColor" red="0.54120698749999996" green="0.91966076809999997" blue="0.95157997859999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -163,7 +172,7 @@
         <!--ABOUT-->
         <scene sceneID="2qt-0b-YQA">
             <objects>
-                <viewController title="ABOUT" id="wak-dH-gP9" sceneMemberID="viewController">
+                <viewController title="ABOUT" id="wak-dH-gP9" customClass="aboutViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="gLW-rw-Wbe">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -176,7 +185,7 @@
                                         <rect key="frame" x="37" y="37" width="307" height="522"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <mutableString key="text">My goal is to become a mobile and web developer with solid skills, so I can be part of creating great applications and services. I would like to work in a company/team where the default office clothing style does not include shoes. Building apps together in cross functional teams where the aim is to build good designs and cutting edge tech solutions would be a priviledge to be part of. Now I am studying mobile applications and web technologies. With former profession as a soccer player, sales &amp; marketing rep within IT and some hobbies like popping and breaking I am equipped with couple other attributes beyond coding. If you like to see some web and projects that I have done welcome to check out www.koolsport.se</mutableString>
+                                        <string key="text">My goal is to become a mobile and web developer with solid skills, so I can be part of creating great applications and services. I would like to work in a company/team where the default office clothing style does not include shoes. Building apps together in cross functional teams where the aim is to build good designs and cutting edge tech solutions would be a priviledge to be part of. Now I am studying mobile applications and web technologies. With former profession as a soccer player, sales &amp; marketing rep within IT and some hobbies like popping and breaking I am equipped with couple other attributes beyond coding. If you like to see some web and projects that I have done welcome to check out www.koolsport.se</string>
                                         <fontDescription key="fontDescription" name="OpenSans-Regular" family="Open Sans" pointSize="17"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                     </textView>
