@@ -6,6 +6,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -18,7 +19,7 @@
         </array>
     </customFonts>
     <scenes>
-        <!--About Me-->
+        <!--WHO AM I-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
@@ -27,10 +28,10 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="igG-cW-1MK">
-                                <rect key="frame" x="245" y="69" width="130" height="34"/>
+                                <rect key="frame" x="277" y="146" width="98" height="34"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="ContrailOne-Regular" family="Contrail One" pointSize="17"/>
-                                <state key="normal" title="&gt; Coding buddies">
+                                <state key="normal" title="&gt; FRIENDS">
                                     <color key="titleColor" red="0.12941176470588234" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
@@ -38,19 +39,22 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="j5o-HH-hrF">
-                                <rect key="frame" x="245" y="135" width="130" height="34"/>
+                                <rect key="frame" x="277" y="176" width="98" height="34"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="ContrailOne-Regular" family="Contrail One" pointSize="17"/>
-                                <state key="normal" title="&gt; Mini game">
+                                <state key="normal" title="&gt; GAME">
                                     <color key="titleColor" red="0.12941176469999999" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
+                                <connections>
+                                    <segue destination="3fP-b9-M0a" kind="show" id="LAo-qE-rjc"/>
+                                </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="patrik_rikama" translatesAutoresizingMaskIntoConstraints="NO" id="azA-g3-HS2">
                                 <rect key="frame" x="0.0" y="58" width="240" height="128"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="jVp-R0-cSl">
-                                <rect key="frame" x="0.0" y="257" width="375" height="150"/>
+                                <rect key="frame" x="0.0" y="257" width="375" height="200"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
                                     <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="PATRIK RIKAMA-HINNENBERG" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="uZt-36-aHZ">
@@ -98,47 +102,100 @@
                                 </subviews>
                                 <color key="backgroundColor" red="0.54120698749999996" green="0.91966076809999997" blue="0.95157997859999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </view>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pc4-Ra-UNF">
-                                <rect key="frame" x="25" y="323" width="334" height="287"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pc4-Ra-UNF">
+                                <rect key="frame" x="25" y="341" width="334" height="269"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <string key="text">My goal is to become a mobile and web developer with solid skills, so I can be part of creating great applications and services. I would like to work in a company/team where the default office clothing style does not include shoes. Building apps together in cross functional teams where the aim is to build good designs and cutting edge tech solutions would be a priviledge to be part of. Now I am studying mobile applications and web technologies. With former profession as a soccer player, sales &amp; marketing rep within IT and some hobbies like popping and breaking I am equipped with couple other attributes beyond coding.</string>
-                                <fontDescription key="fontDescription" name="OpenSans-Regular" family="Open Sans" pointSize="14"/>
+                                <string key="text">&lt;ul&gt;
+  &lt;li&gt;NATIONALITY - Finland&lt;/li&gt;
+  &lt;li&gt;HOMECITY - Gothenburg&lt;/li&gt;
+  &lt;li&gt;LANGUAGES - Swe, Fin, Eng&lt;/li&gt;
+  &lt;li&gt;CODE - Web, Java, Android, WP&lt;/li&gt;
+&lt;/ul&gt;</string>
+                                <fontDescription key="fontDescription" name="OpenSans-Regular" family="Open Sans" pointSize="16"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iMR-gK-tn5">
-                                <rect key="frame" x="245" y="103" width="130" height="34"/>
+                                <rect key="frame" x="277" y="115" width="98" height="34"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="ContrailOne-Regular" family="Contrail One" pointSize="17"/>
-                                <state key="normal" title="&gt; GitHub projects">
+                                <state key="normal" title="&gt; PROJECTS">
                                     <color key="titleColor" red="0.12941176469999999" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
+                                <connections>
+                                    <segue destination="te9-Fn-XIQ" kind="show" id="Pm4-7M-pll"/>
+                                </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="beardMe2" translatesAutoresizingMaskIntoConstraints="NO" id="tWk-Is-5nk">
                                 <rect key="frame" x="11" y="174" width="196" height="90"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OYL-1b-LaD">
+                                <rect key="frame" x="277" y="84" width="98" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="ContrailOne-Regular" family="Contrail One" pointSize="17"/>
+                                <state key="normal" title="&gt; ABOUT">
+                                    <color key="titleColor" red="0.12941176469999999" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="wak-dH-gP9" kind="show" id="sMZ-JQ-ySw"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
-                    <navigationItem key="navigationItem" title="About Me" id="AkI-Gx-lQQ">
+                    <navigationItem key="navigationItem" title="WHO AM I" id="AkI-Gx-lQQ">
                         <barButtonItem key="backBarButtonItem" title=" " id="RYx-lz-KpV"/>
                     </navigationItem>
                     <connections>
                         <outlet property="bearMe" destination="tWk-Is-5nk" id="Wad-Y2-xmh"/>
                         <outlet property="switchBlk" destination="1qC-Jy-pGV" id="6Gf-rv-471"/>
+                        <outlet property="textView" destination="Pc4-Ra-UNF" id="5dM-1s-RzO"/>
                         <outlet property="textViewAbout" destination="Pc4-Ra-UNF" id="6Is-Cq-em8"/>
+                        <outlet property="uiTextHtml" destination="Pc4-Ra-UNF" id="D5Z-UP-Kz5"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="372" y="33.733133433283363"/>
         </scene>
-        <!--Coding buddies-->
+        <!--ABOUT-->
+        <scene sceneID="2qt-0b-YQA">
+            <objects>
+                <viewController title="ABOUT" id="wak-dH-gP9" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="gLW-rw-Wbe">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="7qQ-Hr-uzR">
+                                <rect key="frame" x="0.0" y="64" width="375" height="306"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="r6w-KT-SiR">
+                                        <rect key="frame" x="37" y="37" width="307" height="522"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <mutableString key="text">My goal is to become a mobile and web developer with solid skills, so I can be part of creating great applications and services. I would like to work in a company/team where the default office clothing style does not include shoes. Building apps together in cross functional teams where the aim is to build good designs and cutting edge tech solutions would be a priviledge to be part of. Now I am studying mobile applications and web technologies. With former profession as a soccer player, sales &amp; marketing rep within IT and some hobbies like popping and breaking I am equipped with couple other attributes beyond coding. If you like to see some web and projects that I have done welcome to check out www.koolsport.se</mutableString>
+                                        <fontDescription key="fontDescription" name="OpenSans-Regular" family="Open Sans" pointSize="17"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
+                                </subviews>
+                                <color key="backgroundColor" name="cyanP"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="39L-QY-6O9"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="TnF-8q-q62" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1244" y="-493.40329835082463"/>
+        </scene>
+        <!--FRIENDS-->
         <scene sceneID="qln-UX-Tcw">
             <objects>
-                <viewController title="Coding buddies" id="bIh-aF-s0V" sceneMemberID="viewController">
+                <viewController title="FRIENDS" id="bIh-aF-s0V" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Z7R-ae-LFb">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -148,7 +205,37 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ASr-Ku-e31" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1108" y="33.733133433283363"/>
+            <point key="canvasLocation" x="2007" y="-163"/>
+        </scene>
+        <!--GAME-->
+        <scene sceneID="4nu-Av-Nah">
+            <objects>
+                <viewController title="GAME" id="3fP-b9-M0a" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Ghg-jz-3YF">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="8yT-7s-I2i"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="RY2-LJ-dVN" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1244" y="823"/>
+        </scene>
+        <!--PROJECTS-->
+        <scene sceneID="48D-Em-0FM">
+            <objects>
+                <viewController title="PROJECTS" id="te9-Fn-XIQ" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="vtm-be-vUR">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="kgU-Hq-FCz"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tqY-IV-V9a" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2003" y="503"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="AAk-dV-Puj">
@@ -176,5 +263,8 @@
         <image name="GitHub-Mark-64px" width="64" height="64"/>
         <image name="beardMe2" width="242" height="178"/>
         <image name="patrik_rikama" width="672" height="789"/>
+        <namedColor name="cyanP">
+            <color red="0.54100000858306885" green="0.92000001668930054" blue="0.95200002193450928" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
     </resources>
 </document>

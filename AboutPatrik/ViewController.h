@@ -16,5 +16,7 @@
 
 @property (weak, nonatomic) IBOutlet UIImageView *bearMe;
 
+@property (weak, nonatomic) IBOutlet UITextView *uiTextHtml;
+
 @end
 

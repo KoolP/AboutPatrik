@@ -11,6 +11,7 @@
 		5F914E9D200D1CC600D0FA47 /* ContrailOne-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5F914E9C200D1CC600D0FA47 /* ContrailOne-Regular.ttf */; };
 		5F914E9F200D1CF900D0FA47 /* OpenSans-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5F914E9E200D1CF900D0FA47 /* OpenSans-Regular.ttf */; };
 		5F914EA1200D2C5900D0FA47 /* BRINGTHANOIZE.TTF in Resources */ = {isa = PBXBuildFile; fileRef = 5F914EA0200D2C5900D0FA47 /* BRINGTHANOIZE.TTF */; };
+		5FCE3627200EBD7C00941204 /* likeBeard.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 5FCE3626200EBD7C00941204 /* likeBeard.m4a */; };
 		5FF84EF5200BAAA00001282E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FF84EF4200BAAA00001282E /* AppDelegate.m */; };
 		5FF84EF8200BAAA00001282E /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FF84EF7200BAAA00001282E /* ViewController.m */; };
 		5FF84EFB200BAAA10001282E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5FF84EF9200BAAA10001282E /* Main.storyboard */; };
@@ -23,6 +24,8 @@
 		5F914E9C200D1CC600D0FA47 /* ContrailOne-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ContrailOne-Regular.ttf"; sourceTree = "<group>"; };
 		5F914E9E200D1CF900D0FA47 /* OpenSans-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-Regular.ttf"; sourceTree = "<group>"; };
 		5F914EA0200D2C5900D0FA47 /* BRINGTHANOIZE.TTF */ = {isa = PBXFileReference; lastKnownFileType = file; path = BRINGTHANOIZE.TTF; sourceTree = "<group>"; };
+		5FCE3623200EBCD100941204 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		5FCE3626200EBD7C00941204 /* likeBeard.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = likeBeard.m4a; sourceTree = "<group>"; };
 		5FF84EF0200BAAA00001282E /* AboutPatrik.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AboutPatrik.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5FF84EF3200BAAA00001282E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		5FF84EF4200BAAA00001282E /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -46,11 +49,28 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5FCE3622200EBCD000941204 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5FCE3623200EBCD100941204 /* AVFoundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		5FCE3625200EBD2200941204 /* Sounds */ = {
+			isa = PBXGroup;
+			children = (
+				5FCE3626200EBD7C00941204 /* likeBeard.m4a */,
+			);
+			path = Sounds;
+			sourceTree = "<group>";
+		};
 		5FF84EE7200BAAA00001282E = {
 			isa = PBXGroup;
 			children = (
 				5FF84EF2200BAAA00001282E /* AboutPatrik */,
 				5FF84EF1200BAAA00001282E /* Products */,
+				5FCE3622200EBCD000941204 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -71,6 +91,7 @@
 				5FF84EF6200BAAA00001282E /* ViewController.h */,
 				5FF84EF7200BAAA00001282E /* ViewController.m */,
 				5FF84EF9200BAAA10001282E /* Main.storyboard */,
+				5FCE3625200EBD2200941204 /* Sounds */,
 				5FF84EFC200BAAA10001282E /* Assets.xcassets */,
 				5FF84EFE200BAAA10001282E /* LaunchScreen.storyboard */,
 				5FF84F01200BAAA10001282E /* Info.plist */,
@@ -147,6 +168,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5FCE3627200EBD7C00941204 /* likeBeard.m4a in Resources */,
 				5F914E98200D13C800D0FA47 /* Info.plist in Resources */,
 				5F914E9D200D1CC600D0FA47 /* ContrailOne-Regular.ttf in Resources */,
 				5F914EA1200D2C5900D0FA47 /* BRINGTHANOIZE.TTF in Resources */,
