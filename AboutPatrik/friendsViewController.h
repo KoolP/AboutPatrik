@@ -11,6 +11,6 @@
 @interface friendsViewController : UIViewController
 @property (weak, nonatomic) IBOutlet UIImageView *beauty;
 @property (weak, nonatomic) IBOutlet UIImageView *trucker;
-@property (weak, nonatomic) IBOutlet UIImageView *oldwise;
+@property (weak, nonatomic) IBOutlet UIImageView *carlita;
 
 @end

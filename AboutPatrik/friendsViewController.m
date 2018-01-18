@@ -19,11 +19,17 @@
     [super viewDidLoad];
     _beauty.hidden=YES;
     _trucker.hidden=YES;
+    _carlita.hidden=YES;
 }
 - (IBAction)modifyFriends:(id)sender {
     if (_switchFriends.on) {
         _beauty.hidden=NO;
         _trucker.hidden=NO;
+        _carlita.hidden=NO;
+    } else {
+        _beauty.hidden=YES;
+        _trucker.hidden=YES;
+        _carlita.hidden=YES;
     }
 }
 
