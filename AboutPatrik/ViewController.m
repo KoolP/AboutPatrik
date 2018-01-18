@@ -9,7 +9,10 @@
 #import "ViewController.h"
 
 @interface ViewController ()
+
+@property (weak, nonatomic) IBOutlet UISwitch *switchBlk;
 @property (weak, nonatomic) IBOutlet UITextView *textView;
+@property (weak, nonatomic) IBOutlet UITextView *textViewAbout;
 
 @end
 

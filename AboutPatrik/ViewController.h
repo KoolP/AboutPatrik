@@ -10,13 +10,9 @@
 
 @interface ViewController : UIViewController
 
-@property (weak, nonatomic) IBOutlet UISwitch *switchBlk;
-
-@property (weak, nonatomic) IBOutlet UITextView *textViewAbout;
 
 @property (weak, nonatomic) IBOutlet UIImageView *bearMe;
 
-@property (weak, nonatomic) IBOutlet UITextView *uiTextHtml;
 
 @end
 
