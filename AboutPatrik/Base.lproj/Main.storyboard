@@ -28,9 +28,9 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="igG-cW-1MK">
-                                <rect key="frame" x="277" y="146" width="98" height="34"/>
+                                <rect key="frame" x="277" y="85" width="98" height="34"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="ContrailOne-Regular" family="Contrail One" pointSize="17"/>
+                                <fontDescription key="fontDescription" name="ContrailOne-Regular" family="Contrail One" pointSize="20"/>
                                 <state key="normal" title="&gt; FRIENDS">
                                     <color key="titleColor" red="0.12941176470588234" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
@@ -39,9 +39,9 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="j5o-HH-hrF">
-                                <rect key="frame" x="277" y="176" width="98" height="34"/>
+                                <rect key="frame" x="277" y="115" width="98" height="34"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="ContrailOne-Regular" family="Contrail One" pointSize="17"/>
+                                <fontDescription key="fontDescription" name="ContrailOne-Regular" family="Contrail One" pointSize="20"/>
                                 <state key="normal" title="&gt; GAME">
                                     <color key="titleColor" red="0.12941176469999999" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
@@ -70,6 +70,14 @@
                                         <color key="onTintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <connections>
                                             <action selector="swichPushed:" destination="BYZ-38-t0r" eventType="valueChanged" id="qO7-Q9-Acu"/>
+                                        </connections>
+                                    </switch>
+                                    <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="orI-kd-Fug">
+                                        <rect key="frame" x="306" y="57" width="49" height="31"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="onTintColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <connections>
+                                            <action selector="themeColor:" destination="BYZ-38-t0r" eventType="valueChanged" id="i9K-cz-EGx"/>
                                         </connections>
                                     </switch>
                                 </subviews>
@@ -112,7 +120,7 @@
                                 <color key="backgroundColor" red="0.54120698749999996" green="0.91966076809999997" blue="0.95157997859999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </view>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pc4-Ra-UNF">
-                                <rect key="frame" x="25" y="341" width="334" height="269"/>
+                                <rect key="frame" x="25" y="375" width="334" height="235"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <string key="text">&lt;ul&gt;
@@ -125,9 +133,9 @@
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iMR-gK-tn5">
-                                <rect key="frame" x="277" y="115" width="98" height="34"/>
+                                <rect key="frame" x="277" y="54" width="98" height="34"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="ContrailOne-Regular" family="Contrail One" pointSize="17"/>
+                                <fontDescription key="fontDescription" name="ContrailOne-Regular" family="Contrail One" pointSize="20"/>
                                 <state key="normal" title="&gt; PROJECTS">
                                     <color key="titleColor" red="0.12941176469999999" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
@@ -140,9 +148,9 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OYL-1b-LaD">
-                                <rect key="frame" x="277" y="84" width="98" height="34"/>
+                                <rect key="frame" x="277" y="23" width="98" height="34"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="ContrailOne-Regular" family="Contrail One" pointSize="17"/>
+                                <fontDescription key="fontDescription" name="ContrailOne-Regular" family="Contrail One" pointSize="20"/>
                                 <state key="normal" title="&gt; ABOUT">
                                     <color key="titleColor" red="0.12941176469999999" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
@@ -160,6 +168,7 @@
                     <connections>
                         <outlet property="bearMe" destination="tWk-Is-5nk" id="Wad-Y2-xmh"/>
                         <outlet property="switchBlk" destination="1qC-Jy-pGV" id="6Gf-rv-471"/>
+                        <outlet property="switchRed" destination="orI-kd-Fug" id="uGg-Rg-93L"/>
                         <outlet property="textView" destination="Pc4-Ra-UNF" id="5dM-1s-RzO"/>
                         <outlet property="textViewAbout" destination="Pc4-Ra-UNF" id="6Is-Cq-em8"/>
                     </connections>
@@ -184,7 +193,7 @@
                                         <rect key="frame" x="37" y="37" width="307" height="522"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <string key="text">My goal is to become a mobile and web developer with solid skills, so I can be part of creating great applications and services. I would like to work in a company/team where the default office clothing style does not include shoes. Building apps together in cross functional teams where the aim is to build good designs and cutting edge tech solutions would be a priviledge to be part of. Now I am studying mobile applications and web technologies. With former profession as a soccer player, sales &amp; marketing rep within IT and some hobbies like popping and breaking I am equipped with couple other attributes beyond coding. If you like to see some web and projects that I have done welcome to check out www.koolsport.se</string>
+                                        <mutableString key="text">My goal is to become a mobile and web developer with solid skills, so I can be part of creating great applications and services. I would like to work in a company/team where the default office clothing style does not include shoes. Building apps together in cross functional teams where the aim is to build good designs and cutting edge tech solutions would be a priviledge to be part of. Now I am studying mobile applications and web technologies including Android and iOS platforms. I have a former athletic carreer as a soccer player, have worked some years as sales &amp; marketing rep for some IT companies and built some Wordpress websites as a freelancer at www.koolsport.se. Hobbieshobbies like popping and breaking.</mutableString>
                                         <fontDescription key="fontDescription" name="OpenSans-Regular" family="Open Sans" pointSize="17"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                     </textView>
@@ -354,6 +363,7 @@
                     <connections>
                         <outlet property="guessedNumber" destination="GK2-r2-4Ra" id="Jv0-fc-DT1"/>
                         <outlet property="infoLabel" destination="ebZ-IP-Ybf" id="Hy7-gY-ucN"/>
+                        <outlet property="userInputField" destination="GK2-r2-4Ra" id="Ptb-q1-zSY"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="RY2-LJ-dVN" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -363,7 +373,7 @@
         <!--PROJECTS-->
         <scene sceneID="48D-Em-0FM">
             <objects>
-                <viewController title="PROJECTS" id="te9-Fn-XIQ" sceneMemberID="viewController">
+                <viewController title="PROJECTS" id="te9-Fn-XIQ" customClass="projectsViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="vtm-be-vUR">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

@@ -7,10 +7,12 @@
 //
 
 #import "ViewController.h"
+#import "Color.h"
 
 @interface ViewController ()
 
 @property (weak, nonatomic) IBOutlet UISwitch *switchBlk;
+@property (weak, nonatomic) IBOutlet UISwitch *switchRed;
 @property (weak, nonatomic) IBOutlet UITextView *textView;
 @property (weak, nonatomic) IBOutlet UITextView *textViewAbout;
 
@@ -26,12 +28,17 @@
      @{NSForegroundColorAttributeName:[UIColor blackColor],
        NSFontAttributeName:[UIFont fontWithName:@"ContrailOne-Regular" size:21]}];
     // Change UI navBar font
+    self.navigationController.navigationBar.hidden = YES;
     
     _bearMe.hidden=YES;
     // Hide beard
     
-    _textView.textContainerInset = UIEdgeInsetsMake(50, 5, 0, 5);
+    _textView.textContainerInset = UIEdgeInsetsMake(30, 5, 0, 5);
     // Format text container
+}
+
+-(void)viewWillAppear:(BOOL)animated {
+    self.navigationController.navigationBar.hidden = YES;
 }
 
 - (IBAction)swichPushed:(id)sender {
@@ -47,6 +54,19 @@
         _textViewAbout.backgroundColor = [UIColor whiteColor];
         _textViewAbout.textColor = [UIColor blackColor];
         _bearMe.hidden = YES;
+    }
+}
+
+//Theme switch for global pages
+- (IBAction)themeColor:(id)sender {
+    if(_switchRed.on) {
+    self.view.backgroundColor  = [UIColor redColor];
+        _textViewAbout.backgroundColor = [UIColor redColor];
+        xColor =[UIColor redColor];
+    } else{
+      self.view.backgroundColor = [UIColor whiteColor];
+      _textViewAbout.backgroundColor = [UIColor whiteColor];
+      xColor =[UIColor whiteColor];
     }
 }
 

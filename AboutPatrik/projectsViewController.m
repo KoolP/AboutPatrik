@@ -1,21 +1,26 @@
 //
-//  aboutViewController.m
+//  projectsViewController.m
 //  AboutPatrik
 //
-//  Created by Patrik Rikama Hinnenberg on 2018-01-17.
+//  Created by Patrik Rikama Hinnenberg on 2018-01-19.
 //  Copyright © 2018 Patrik Rikama Hinnenberg. All rights reserved.
 //
 
-#import "aboutViewController.h"
+#import "projectsViewController.h"
+#import "Color.h"
 
-@interface aboutViewController ()
+@interface projectsViewController ()
 
 @end
 
-@implementation aboutViewController
+@implementation projectsViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    self.view.backgroundColor = xColor;
+    //xColor = [UIColor redColor];
+    //self.view.backgroundColor = [UIColor redColor];
+    
     self.navigationController.navigationBar.hidden = NO;
     // Do any additional setup after loading the view.
 }

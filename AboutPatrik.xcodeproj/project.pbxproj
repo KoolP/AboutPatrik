@@ -21,6 +21,8 @@
 		5FF84F03200BAAA10001282E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FF84F02200BAAA10001282E /* main.m */; };
 		9424EB7F200F610400A55531 /* aboutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9424EB7E200F610400A55531 /* aboutViewController.m */; };
 		9424EBA7200FB1B200A55531 /* gameViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9424EBA6200FB1B200A55531 /* gameViewController.m */; };
+		9427C23720123813007EA820 /* projectsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9427C23620123813007EA820 /* projectsViewController.m */; };
+		9427C23920123BE5007EA820 /* Color.m in Sources */ = {isa = PBXBuildFile; fileRef = 9427C23820123BE5007EA820 /* Color.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -45,6 +47,10 @@
 		9424EB7E200F610400A55531 /* aboutViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = aboutViewController.m; sourceTree = "<group>"; };
 		9424EBA5200FB1B200A55531 /* gameViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = gameViewController.h; sourceTree = "<group>"; };
 		9424EBA6200FB1B200A55531 /* gameViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = gameViewController.m; sourceTree = "<group>"; };
+		9427C23520123813007EA820 /* projectsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = projectsViewController.h; sourceTree = "<group>"; };
+		9427C23620123813007EA820 /* projectsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = projectsViewController.m; sourceTree = "<group>"; };
+		9427C23820123BE5007EA820 /* Color.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Color.m; sourceTree = "<group>"; };
+		9427C23A20123C2B007EA820 /* Color.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Color.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +105,8 @@
 				5FF84EF6200BAAA00001282E /* ViewController.h */,
 				5FF84EF7200BAAA00001282E /* ViewController.m */,
 				5FF84EF9200BAAA10001282E /* Main.storyboard */,
+				9427C23520123813007EA820 /* projectsViewController.h */,
+				9427C23620123813007EA820 /* projectsViewController.m */,
 				5FCE362F20113A0600941204 /* friendsViewController.h */,
 				5FCE363020113A0600941204 /* friendsViewController.m */,
 				9424EBA5200FB1B200A55531 /* gameViewController.h */,
@@ -111,6 +119,8 @@
 				5FF84EFE200BAAA10001282E /* LaunchScreen.storyboard */,
 				5FF84F01200BAAA10001282E /* Info.plist */,
 				5FF84F02200BAAA10001282E /* main.m */,
+				9427C23A20123C2B007EA820 /* Color.h */,
+				9427C23820123BE5007EA820 /* Color.m */,
 			);
 			path = AboutPatrik;
 			sourceTree = "<group>";
@@ -202,11 +212,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				9424EBA7200FB1B200A55531 /* gameViewController.m in Sources */,
+				9427C23920123BE5007EA820 /* Color.m in Sources */,
 				5FF84EF8200BAAA00001282E /* ViewController.m in Sources */,
 				5FF84F03200BAAA10001282E /* main.m in Sources */,
 				9424EB7F200F610400A55531 /* aboutViewController.m in Sources */,
 				5FCE363120113A0600941204 /* friendsViewController.m in Sources */,
 				5FF84EF5200BAAA00001282E /* AppDelegate.m in Sources */,
+				9427C23720123813007EA820 /* projectsViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

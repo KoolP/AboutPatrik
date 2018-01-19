@@ -12,6 +12,7 @@
 
 @property (weak, nonatomic) IBOutlet UITextField *guessedNumber;
 @property (weak, nonatomic) IBOutlet UILabel *infoLabel;
+@property (weak, nonatomic) IBOutlet UITextField *userInputField;
 
 @end
 
@@ -21,8 +22,13 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    self.navigationController.navigationBar.hidden = NO;
     // Do any additional setup after loading the view.
     magicNumber = 1 + arc4random_uniform(100);
+    
+    self.userInputField.keyboardType = UIKeyboardTypeNumberPad;
+    //Allows only numericKeyboard on phone. To set value for guess number. Othervice letters with values can be added.
+    
 }
 - (IBAction)guessButton:(id)sender {
     
