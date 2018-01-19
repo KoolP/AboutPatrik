@@ -12,5 +12,5 @@
 @property (weak, nonatomic) IBOutlet UIImageView *beauty;
 @property (weak, nonatomic) IBOutlet UIImageView *trucker;
 @property (weak, nonatomic) IBOutlet UIImageView *carlita;
-
+//Added images here so they are public
 @end

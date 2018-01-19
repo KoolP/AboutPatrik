@@ -223,14 +223,14 @@
                                         <rect key="frame" x="176" y="113" width="175" height="95"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <fontDescription key="fontDescription" name="OpenSans-Regular" family="Open Sans" pointSize="12"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                     </textView>
                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="..." textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="1cr-lK-ejR">
                                         <rect key="frame" x="176" y="297" width="175" height="95"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <fontDescription key="fontDescription" name="OpenSans-Regular" family="Open Sans" pointSize="12"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                     </textView>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="milja" translatesAutoresizingMaskIntoConstraints="NO" id="0Lj-08-FoH">
@@ -270,7 +270,7 @@
                                 <rect key="frame" x="176" y="523" width="175" height="95"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <fontDescription key="fontDescription" name="OpenSans-Regular" family="Open Sans" pointSize="12"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="c5F-v0-7DX">
@@ -295,6 +295,9 @@
                     <connections>
                         <outlet property="beauty" destination="Zh8-16-sh4" id="Jwi-gM-VUD"/>
                         <outlet property="carlita" destination="1eb-ib-VDh" id="phV-F8-k1U"/>
+                        <outlet property="descriptionEric" destination="PEJ-BR-mWa" id="C9s-LJ-oty"/>
+                        <outlet property="descriptionMani" destination="7vJ-oX-FCg" id="Ozm-e5-NjP"/>
+                        <outlet property="descriptionMilja" destination="1cr-lK-ejR" id="HCd-Dy-f0Q"/>
                         <outlet property="switchFriends" destination="OBx-GG-jev" id="Rxn-SW-ZL0"/>
                         <outlet property="trucker" destination="YWV-3W-u4I" id="rS8-JK-xOQ"/>
                     </connections>
