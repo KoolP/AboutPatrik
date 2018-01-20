@@ -7,6 +7,7 @@
 //
 
 #import "gameViewController.h"
+#import "Color.h"
 
 @interface gameViewController ()
 
@@ -22,6 +23,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    self.view.backgroundColor = xColor;
     self.navigationController.navigationBar.hidden = NO;
     // Do any additional setup after loading the view.
     magicNumber = 1 + arc4random_uniform(100);

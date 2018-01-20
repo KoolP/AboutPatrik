@@ -11,8 +11,6 @@
 
 UIColor *xColor;
 
-
-
 /*NSUserDefaults *preferences = [NSUserDefaults standardUserDefaults];
 NSString *currentColorKey = @"currentColor";*/
 

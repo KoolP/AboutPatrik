@@ -7,6 +7,7 @@
 //
 
 #import "friendsViewController.h"
+#import "Color.h"
 
 @interface friendsViewController ()
 @property (weak, nonatomic) IBOutlet UISwitch *switchFriends;
@@ -20,6 +21,8 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+    self.view.backgroundColor = xColor;
     self.navigationController.navigationBar.hidden = NO;
     
     _beauty.hidden=YES;

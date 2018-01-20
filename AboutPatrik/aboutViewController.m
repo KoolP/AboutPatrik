@@ -7,6 +7,7 @@
 //
 
 #import "aboutViewController.h"
+#import "Color.h"
 
 @interface aboutViewController ()
 
@@ -16,6 +17,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    self.view.backgroundColor = xColor;
     self.navigationController.navigationBar.hidden = NO;
     // Do any additional setup after loading the view.
 }
