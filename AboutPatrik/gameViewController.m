@@ -42,8 +42,7 @@
         self.infoLabel.text = @"Lower";
     }else if (magicNumber == guessedNumber) {
         self.infoLabel.text = @"You the best";
-    }
-    
+    }    
 }
 
 - (void)didReceiveMemoryWarning {

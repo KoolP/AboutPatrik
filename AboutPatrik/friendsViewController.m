@@ -11,6 +11,9 @@
 
 @interface friendsViewController ()
 @property (weak, nonatomic) IBOutlet UISwitch *switchFriends;
+@property (weak, nonatomic) IBOutlet UILabel *nameEric;
+@property (weak, nonatomic) IBOutlet UILabel *nameMilja;
+@property (weak, nonatomic) IBOutlet UILabel *nameMani;
 @property (weak, nonatomic) IBOutlet UITextView *descriptionEric;
 @property (weak, nonatomic) IBOutlet UITextView *descriptionMilja;
 @property (weak, nonatomic) IBOutlet UITextView *descriptionMani;
@@ -29,7 +32,17 @@
     _trucker.hidden=YES;
     _carlita.hidden=YES;
     
-    self.friendData = @{ @"eric": @"Eric är en mysig kille. Han har studerat till electro ingenjör och gillar Robot Wars. Med Eric skall vi åka till FOSDEM 18' och kolla det senaste som open source communityn har att erbjuda.", @"milja": @"Milja är en superdatabas från Finland hon pratar typ 6 olika språk, bland annat flytande japanska och hon har bott i Japan.", @"mani": @"Mr Seghdi är den som satt igång kaffe gruppen i klassen och mannen som får igång processen. Han kommer bli en kanon lösnings arkitekt." };
+    self.friendData =
+    @{ @"eric": @{ @"info": @"Eric är en mysig kille. Han har studerat till electro ingenjör och gillar Robot Wars. Med Eric skall vi åka till FOSDEM 18' och kolla det senaste som open source communityn har att erbjuda.",
+                   @"name": @"Eric"
+                   },
+       @"milja": @{ @"info": @"Milja är en superdatabas från Finland hon pratar typ 6 olika språk, bland annat flytande japanska och hon har bott i Japan. Hon har dessutom sisu.",
+                    @"name": @"Milja"
+                    },
+       @"mani": @{ @"info": @"Mr Seghdi är den som satt igång kaffe gruppen i klassen och mannen som får igång processen. Han kommer bli en kanon utvecklare.",
+                   @"name": @"Mani"
+                   } };
+    
 }
 
 
@@ -44,9 +57,12 @@
         _carlita.hidden=YES;
     }
     
-    self.descriptionEric.text = self.friendData[@"eric"];
-    self.descriptionMilja.text = self.friendData[@"milja"];
-    self.descriptionMani.text = self.friendData[@"mani"];
+    self.nameEric.text = self.friendData[@"eric"][@"name"];
+    self.nameMilja.text = self.friendData[@"milja"][@"name"];
+    self.nameMani.text = self.friendData[@"mani"][@"name"];
+    self.descriptionEric.text = self.friendData[@"eric"][@"info"];
+    self.descriptionMilja.text = self.friendData[@"milja"][@"info"];
+    self.descriptionMani.text = self.friendData[@"mani"][@"info"];
 }
 
 

@@ -15,26 +15,23 @@
 @property (weak, nonatomic) IBOutlet UISwitch *switchRed;
 @property (weak, nonatomic) IBOutlet UITextView *textView;
 @property (weak, nonatomic) IBOutlet UITextView *textViewAbout;
+@property (weak, nonatomic) IBOutlet UITextField *userName;
 
 @end
 
 @implementation ViewController
+AVAudioPlayer *beardSound;
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
     
     [self.navigationController.navigationBar setTitleTextAttributes:
      @{NSForegroundColorAttributeName:[UIColor blackColor],
        NSFontAttributeName:[UIFont fontWithName:@"ContrailOne-Regular" size:21]}];
-    // Change UI navBar font
     self.navigationController.navigationBar.hidden = YES;
-    
-    _bearMe.hidden=YES;
-    // Hide beard
-    
-    _textView.textContainerInset = UIEdgeInsetsMake(30, 5, 0, 5);
-    // Format text container
+    self.bearMe.hidden=YES;
+    self.textViewAbout.textContainerInset = UIEdgeInsetsMake(40, 5, 0, 5);
+    xColor = [UIColor whiteColor];
 }
 
 -(void)viewWillAppear:(BOOL)animated {
@@ -44,44 +41,51 @@
 - (IBAction)swichPushed:(id)sender {
     if (_switchBlk.on){
         self.view.backgroundColor  = [UIColor blackColor];
-        _textViewAbout.backgroundColor = [UIColor colorWithRed:0.0/255.0 green:0.0/255.0 blue:0.0/255.0 alpha:1.0];
-        _textViewAbout.textColor = [UIColor whiteColor];
-        /*_textViewAbout.backgroundColor = [UIColor colorWithRed:138.0/255.0 green:235.0/255.0 blue:243.0/255.0 alpha:1.0];*/
-        _bearMe.hidden = NO;
+        self.textViewAbout.backgroundColor = [UIColor colorWithRed:0.0/255.0 green:0.0/255.0 blue:0.0/255.0 alpha:1.0];
+        self.textViewAbout.textColor = [UIColor whiteColor];
+        self.bearMe.hidden = NO;
+        self.userName.text = @"..My dream is..";
+        
+        NSURL *soundFile;
+        soundFile = [NSURL fileURLWithPath:
+                    [[NSBundle mainBundle]
+                    pathForResource:@"barry"
+                    ofType:@"m4a"]];
+        beardSound  = [[AVAudioPlayer alloc] initWithContentsOfURL:soundFile error:nil];
+        [beardSound play];
         
     } else{
         self.view.backgroundColor = [UIColor whiteColor];
-        _textViewAbout.backgroundColor = [UIColor whiteColor];
-        _textViewAbout.textColor = [UIColor blackColor];
-        _bearMe.hidden = YES;
+        self.textViewAbout.backgroundColor = [UIColor whiteColor];
+        self.textViewAbout.textColor = [UIColor blackColor];
+        self.bearMe.hidden = YES;
+        self.userName.text = @"Patrik Rikama-Hinnenberg";
     }
 }
 
 //Theme switch for global pages
 - (IBAction)themeColor:(id)sender {
     if(_switchRed.on) {
-    self.view.backgroundColor  = [UIColor redColor];
-        _textViewAbout.backgroundColor = [UIColor redColor];
-        xColor =[UIColor redColor];
+    xColor =[UIColor colorWithRed:250.0/255.0 green:255.0/255.0 blue:11.0/255.0 alpha:1.0];
+        self.view.backgroundColor  = xColor;
+        self.textViewAbout.backgroundColor = [UIColor colorWithRed:250.0/255.0 green:255.0/255.0 blue:11.0/255.0 alpha:1.0];
+        
     } else{
       self.view.backgroundColor = [UIColor whiteColor];
-      _textViewAbout.backgroundColor = [UIColor whiteColor];
+      self.textViewAbout.backgroundColor = [UIColor whiteColor];
       xColor =[UIColor whiteColor];
     }
 }
 
 - (IBAction)github:(id)sender {
     NSURL * githubURL = [NSURL URLWithString:@"https://github.com/KoolP"];
-    
     [[UIApplication sharedApplication] openURL: githubURL options:@{} completionHandler:nil];
 }
 
 - (IBAction)koolsport:(id)sender {
     NSURL * koolsportURL = [NSURL URLWithString:@"http://koolsport.se/"];
-    
     [[UIApplication sharedApplication] openURL: koolsportURL options:@{} completionHandler:nil];
 }
-
 
 
 - (void)didReceiveMemoryWarning {
