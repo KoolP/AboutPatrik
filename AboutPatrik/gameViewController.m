@@ -10,12 +10,14 @@
 #import "Color.h"
 
 @interface gameViewController ()
-
 @property (weak, nonatomic) IBOutlet UITextField *guessedNumber;
+@property (weak, nonatomic) IBOutlet UIImageView *winImage;
 @property (weak, nonatomic) IBOutlet UILabel *infoLabel;
 @property (weak, nonatomic) IBOutlet UITextField *userInputField;
-
 @end
+
+UIImageView *animView;
+UIImageView *winView;
 
 @implementation gameViewController {
     int magicNumber;
@@ -25,26 +27,48 @@
     [super viewDidLoad];
     self.view.backgroundColor = xColor;
     self.navigationController.navigationBar.hidden = NO;
-    // Do any additional setup after loading the view.
     magicNumber = 1 + arc4random_uniform(100);
-    
+    self.winImage.hidden=YES;
     self.userInputField.keyboardType = UIKeyboardTypeNumberPad;
-    //Allows only numericKeyboard on phone. To set value for guess number. Othervice letters with values can be added.
+    //Allows only numericKeyboard on phone.
     
 }
 - (IBAction)guessButton:(id)sender {
+    self.infoLabel.hidden=TRUE;
+    self.winImage.hidden=TRUE;
+    NSArray *animArray = [[NSArray alloc] initWithObjects:
+                          [UIImage imageNamed:@"m1.png"],
+                          [UIImage imageNamed:@"m2.png"],
+                          [UIImage imageNamed:@"m3.png"],
+                          [UIImage imageNamed:@"m4.png"],
+                          [UIImage imageNamed:@"m5.png"],
+                          [UIImage imageNamed:@"m6.png"],nil];
+    animView = [[UIImageView alloc] initWithFrame:CGRectMake(170, 145, 48.0, 48.0)];
+    animView.animationImages = animArray;
+    animView.animationDuration = 1;
+    animView.contentMode = UIViewContentModeBottomLeft;
+    [self.view addSubview:animView];
+    [animView startAnimating];
+    [self performSelector:@selector(stopTheAnimation) withObject:nil afterDelay:1.4];
     
     int guessedNumber = self.guessedNumber.text.intValue;
-    
     if (magicNumber > guessedNumber) {
-        self.infoLabel.text = @"Higher";
+        self.infoLabel.text = @"Higher please";
     }else if (magicNumber < guessedNumber) {
-        self.infoLabel.text = @"Lower";
+        self.infoLabel.text = @"Lower please";
     }else if (magicNumber == guessedNumber) {
         self.infoLabel.text = @"You the best";
-    }    
+        if ([self.infoLabel.text isEqualToString:@"You the best"]) {
+            self.winImage.hidden=NO;
+    }
+    }
 }
 
+-(void)stopTheAnimation{
+    [animView stopAnimating];
+    self.infoLabel.hidden=FALSE;
+}
+    
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.

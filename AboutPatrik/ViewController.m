@@ -44,7 +44,7 @@ AVAudioPlayer *beardSound;
         self.textViewAbout.backgroundColor = [UIColor colorWithRed:0.0/255.0 green:0.0/255.0 blue:0.0/255.0 alpha:1.0];
         self.textViewAbout.textColor = [UIColor whiteColor];
         self.bearMe.hidden = NO;
-        self.userName.text = @"..My dream is..";
+        self.userName.text = @"Barry White";
         
         NSURL *soundFile;
         soundFile = [NSURL fileURLWithPath:
