@@ -49,7 +49,7 @@ UIImageView *winView;
     animView.contentMode = UIViewContentModeBottomLeft;
     [self.view addSubview:animView];
     [animView startAnimating];
-    [self performSelector:@selector(stopTheAnimation) withObject:nil afterDelay:1.4];
+    [self performSelector:@selector(stopTheAnimation) withObject:nil afterDelay:1.5];
     
     int guessedNumber = self.guessedNumber.text.intValue;
     if (magicNumber > guessedNumber) {
